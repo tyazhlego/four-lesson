@@ -31,7 +31,7 @@ def api_check():
                 from_='19378216672',  # номер, который был получен
                 to='79951123345',  # твой номер, на который придёт sms
                 )
-            time.sleep(6)
+            time.sleep(60)
             exit
         else:
             if response.status_code == 200:
@@ -43,7 +43,7 @@ def api_check():
                 from_='19378216672',  # номер, который был получен
                 to='79951123345',  # твой номер, на который придёт sms
                 )
-            time.sleep(6)
+            time.sleep(60)
 
 
 api_check()
